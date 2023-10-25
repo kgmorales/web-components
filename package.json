@@ -1,6 +1,6 @@
 {
   "name": "@kgmorales/my-button-component",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A web component for a button",
   "repository": {
     "type": "git",
@@ -8,9 +8,6 @@
   },
   "author": "Kevin Morales",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
