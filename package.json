@@ -1,6 +1,6 @@
 {
   "name": "@kgmorales/my-button-component",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A web component for a button",
   "repository": {
     "type": "git",
