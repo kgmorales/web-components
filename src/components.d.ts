@@ -10,6 +10,7 @@ export namespace Components {
         "disabled"?: boolean;
         "label": string;
         "size"?: 'small' | 'large';
+        "theme": 'brand-a-theme' | 'brand-b-theme';
         "variant"?: 'primary' | 'secondary' | 'tertiary';
     }
 }
@@ -30,6 +31,7 @@ declare namespace LocalJSX {
         "label"?: string;
         "onButtonClicked"?: (event: CustomEvent<any>) => void;
         "size"?: 'small' | 'large';
+        "theme"?: 'brand-a-theme' | 'brand-b-theme';
         "variant"?: 'primary' | 'secondary' | 'tertiary';
     }
     interface IntrinsicElements {

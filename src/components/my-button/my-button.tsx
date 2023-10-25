@@ -12,13 +12,18 @@ export class MyButton {
   @Prop() size?: 'small' | 'large' = 'large';
   @Prop() variant?: 'primary' | 'secondary' | 'tertiary' = 'primary';
   @Prop() disabled?: boolean = false;
-  
+  @Prop() theme: 'brand-a-theme' | 'brand-b-theme' = 'brand-a-theme';
+
   handleClick(event: UIEvent) {
     this.buttonClicked.emit(event);
   }
 
-  render() {  
-    return <button class={this.getCssClassMap()} onClick={this.handleClick.bind(this)}>{this.label}</button>;
+  render() {
+    return (
+      <button class={this.getCssClassMap()} onClick={this.handleClick.bind(this)}>
+        {this.label}
+      </button>
+    );
   }
 
   getCssClassMap() {
@@ -26,9 +31,8 @@ export class MyButton {
       'button',
       this.size && `button--size-${this.size}`,
       this.variant && `button--variant-${this.variant}`,
-      this.disabled && `button--disabled`
+      this.disabled && `button--disabled`,
+      this.theme && `${this.theme}`,
     );
   }
-
 }
-

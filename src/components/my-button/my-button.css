@@ -8,7 +8,7 @@
   all: unset;
   display: block;
   margin: 16px;
-  
+
 }
 
 /* button base styles */
@@ -21,13 +21,13 @@
 
 /* button sizing styles */
 
-.button.button--size-small { 
+.button.button--size-small {
   font-size: var(--button-typography-sm-font-size);
   height: var(--button-height-sm);
   font-weight: var(--button-typography-sm-font-weight);
 }
 
-.button.button--size-large { 
+.button.button--size-large {
   font-size: var(--button-typography-lg-font-size);
   height: var(--button-height-lg);
   font-weight: var(--button-typography-lg-font-weight);
@@ -79,7 +79,7 @@
   color: var(--color-primary-default);
   border-width: 0px;
   border-color: var(--color-primary-default);
-  border-radius: var(--button-radius); 
+  border-radius: var(--button-radius);
 }
 
 .button.button--variant-tertiary:hover {
